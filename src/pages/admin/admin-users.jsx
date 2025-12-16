@@ -58,7 +58,7 @@ export default function AdminUsers() {
             <option value="admin">Admin</option>
           </select>
         </div>
-
+.
         {message && <div style={{color: message.type === 'error' ? 'crimson' : 'green', marginBottom:8}}>{message.text}</div>}
 
         <button type="submit" disabled={loading} style={{padding:'8px 12px'}}>{loading ? 'Registrando...' : 'Registrar usuario'}</button>
