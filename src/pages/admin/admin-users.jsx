@@ -34,7 +34,7 @@ export default function AdminUsers() {
   };
 
   return (
-    <div>
+    <div className="admin-users">
       <h2>Registro de Usuarios</h2>
       <form onSubmit={handleSubmit} style={{maxWidth:480}}>
         <div style={{marginBottom:8}}>

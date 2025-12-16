@@ -1,16 +1,16 @@
-.admin-users-container {
+.admin-users {
 	text-align: center;
 	padding: 20px;
 }
 
-.form-title {
+.admin-users h2 {
 	color: #2c3e50;
 	font-size: 2em;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
 
-.user-form {
+.admin-users form {
 	max-width: 480px;
 	margin: 0 auto;
 	padding: 30px;
@@ -19,21 +19,21 @@
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-	margin-bottom: 16px;
+.admin-users div {
+	margin-bottom: 8px;
 	text-align: left;
 }
 
-.form-label {
+.admin-users label {
 	display: block;
 	margin-bottom: 4px;
 	color: #34495e;
 	font-weight: 500;
 }
 
-.input-field, .select-field {
+.admin-users input, .admin-users select {
 	width: 100%;
-	padding: 12px;
+	padding: 8px;
 	border: 1px solid #bdc3c7;
 	border-radius: 8px;
 	font-size: 16px;
@@ -41,15 +41,22 @@
 	box-sizing: border-box;
 }
 
-.input-field:focus, .select-field:focus {
+.admin-users input:focus, .admin-users select:focus {
 	outline: none;
 	border-color: #3498db;
 	box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
 }
 
-.submit-button {
-	width: 100%;
-	padding: 12px;
+.admin-users div:last-child {
+	margin-bottom: 12px;
+}
+
+.admin-users div:has(button) {
+	margin-bottom: 0;
+}
+
+.admin-users button {
+	padding: 8px 12px;
 	background: linear-gradient(45deg, #3498db, #2980b9);
 	color: white;
 	border: none;
@@ -59,34 +66,35 @@
 	font-weight: 500;
 	transition: all 0.3s ease;
 	box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+	width: 100%;
 }
 
-.submit-button:hover:not(:disabled) {
+.admin-users button:hover:not(:disabled) {
 	transform: translateY(-2px);
 	box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
 	background: linear-gradient(45deg, #2980b9, #3498db);
 }
 
-.submit-button:disabled {
+.admin-users button:disabled {
 	background: #bdc3c7;
 	cursor: not-allowed;
 	box-shadow: none;
 }
 
-.message {
+.admin-users .message {
 	padding: 10px;
 	border-radius: 8px;
-	margin-bottom: 16px;
+	margin-bottom: 8px;
 	font-weight: 500;
 }
 
-.message.success {
+.admin-users .message.success {
 	background-color: #d4edda;
 	color: #155724;
 	border: 1px solid #c3e6cb;
 }
 
-.message.error {
+.admin-users .message.error {
 	background-color: #f8d7da;
 	color: #721c24;
 	border: 1px solid #f5c6cb;
