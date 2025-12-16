@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './admin-users.css';
 import { registerUser } from '../../services/authServices.js';
 
 export default function AdminUsers() {
