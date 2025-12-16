@@ -38,7 +38,7 @@ Thumbs.db
 # =========================
 # Firebase (si usas claves)
 # =========================
-src/firebase/config.js
+src/firebase/config.js  
 
 # =========================
 # Otros
